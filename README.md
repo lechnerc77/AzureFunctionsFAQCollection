@@ -16,3 +16,6 @@ In general, there are different types of deployment. An overview is given in thi
 
 A canary deployment is possible with Azure Functions. However, you must run your function under an *App Service Plan* in order to be able to use multiple slots, necessary for this deployment type. You find an overview about deployment slots [here](https://docs.microsoft.com/en-US/azure/azure-functions/functions-deployment-slots).
 Another option might be using [API management](https://docs.microsoft.com/en-us/azure/api-management/) or [Azure Traffic Manager](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods#weighted) for routing.
+
+## Scaling of Azure Durable Functions
+While the scaling of stateless Azure FUnctions is basically infinite there are some points that need to be considered when using Azure Durable Functions and Azure Durable Entities. The blog post [How Azure Durable Functions scale](https://zure.com/en/blog/how-azure-durable-functions-scale/) gives some valuable insight.
